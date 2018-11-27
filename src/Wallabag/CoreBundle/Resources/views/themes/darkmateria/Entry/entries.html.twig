@@ -51,13 +51,13 @@
     </ul>
 
     {% if entries.getNbPages > 1 %}
-        <div class="results grey-text lighten-3">
+        <div class="results grey-text text-lighten-3">
             {{ pagerfanta(entries, 'twitter_bootstrap_translated', {'proximity': 1}) }}
         </div>
     {% endif %}
 
     <!-- Export -->
-    <div id="export" class="side-nav right-aligned">
+    <div id="export" class="side-nav black right-aligned">
     {% set currentTag = null %}
     {% if tag is defined %}
         {% set currentTag = tag.slug %}
@@ -67,19 +67,19 @@
     {% endif %}
         <h4 class="center">{{ 'entry.list.export_title'|trans }}</h4>
         <ul>
-            {% if craue_setting('export_epub') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'epub', 'tag' : currentTag }) }}">EPUB</a></li>{% endif %}
-            {% if craue_setting('export_mobi') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'mobi', 'tag' : currentTag }) }}">MOBI</a></li>{% endif %}
-            {% if craue_setting('export_pdf') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'pdf', 'tag' : currentTag }) }}">PDF</a></li>{% endif %}
-            {% if craue_setting('export_csv') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'json', 'tag' : currentTag }) }}">JSON</a></li>{% endif %}
-            {% if craue_setting('export_json') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'csv', 'tag' : currentTag }) }}">CSV</a></li>{% endif %}
-            {% if craue_setting('export_txt') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'txt', 'tag' : currentTag }) }}">TXT</a></li>{% endif %}
-            {% if craue_setting('export_xml') %}<li class="bold"><a class="waves-effect" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'xml', 'tag' : currentTag }) }}">XML</a></li>{% endif %}
+            {% if craue_setting('export_epub') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'epub', 'tag' : currentTag }) }}">EPUB</a></li>{% endif %}
+            {% if craue_setting('export_mobi') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'mobi', 'tag' : currentTag }) }}">MOBI</a></li>{% endif %}
+            {% if craue_setting('export_pdf') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'pdf', 'tag' : currentTag }) }}">PDF</a></li>{% endif %}
+            {% if craue_setting('export_csv') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'json', 'tag' : currentTag }) }}">JSON</a></li>{% endif %}
+            {% if craue_setting('export_json') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'csv', 'tag' : currentTag }) }}">CSV</a></li>{% endif %}
+            {% if craue_setting('export_txt') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'txt', 'tag' : currentTag }) }}">TXT</a></li>{% endif %}
+            {% if craue_setting('export_xml') %}<li class="bold"><a class="waves-effect grey-text" href="{{ path('export_entries', { 'category': currentRoute, 'format': 'xml', 'tag' : currentTag }) }}">XML</a></li>{% endif %}
         </ul>
     </div>
 
     <!-- Filters -->
     {% if form is not null %}
-    <div id="filters" class="side-nav right-aligned">
+    <div id="filters" class="side-nav black right-aligned">
         <form action="{{ path('all') }}">
 
             <h4 class="center">{{ 'entry.filters.title'|trans }}</h4>
