@@ -251,7 +251,7 @@
                     {% endif %}
                     <li>
                         <i class="material-icons link">link</i>
-                        <a href="{{ entry.url|e }}" target="_blank" title="{{ 'entry.view.original_article'|trans }} : {{ entry.title|striptags }}" class="tool">
+                        <a href="{{ entry.url|e }}" target="_blank" title="{{ 'entry.view.original_article'|trans }} : {{ entry.title|striptags }}" class="tool light-blue-text text-darken-1"> {# Color article url, tag color instead? #}
                             {{ entry.domainName|removeWww }}
                         </a>
                     </li>
