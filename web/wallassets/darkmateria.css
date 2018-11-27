@@ -2728,7 +2728,7 @@ table.bordered>thead>tr {
 }
 
 table.striped>tbody>tr:nth-child(odd) {
-    background-color: #f2f2f2
+    background-color: #333
 }
 
 table.striped>tbody>tr>td {
@@ -4556,7 +4556,7 @@ small {
     transition: box-shadow .25s;
     margin: .5rem 0 1rem;
     border-radius: 2px;
-    background-color: #fff
+    background-color: #000
 }
 
 .card {
@@ -4854,7 +4854,7 @@ small {
     overflow-y: hidden;
     height: 48px;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     margin: 0 auto;
     white-space: nowrap
 }
@@ -5575,7 +5575,7 @@ button.btn-floating {
     min-height: 3rem;
     line-height: 3rem;
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: #000;
     border-bottom: 1px solid #ddd
 }
 
