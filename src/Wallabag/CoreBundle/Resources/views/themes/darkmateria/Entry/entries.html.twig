@@ -24,7 +24,7 @@
     <div class="results grey-text lighten-3">
         <div class="nb-results grey-text lighten-3">
             {{ 'entry.list.number_on_the_page'|transchoice(entries.count) }}
-            <a href="{{ path('switch_view_mode') }}"><i class="material-icons">{% if listMode == 0 %}view_list{% else %}view_module{% endif %}</i></a>
+            <a href="{{ path('switch_view_mode') }}"><i class="material-icons grey-text">{% if listMode == 0 %}view_list{% else %}view_module{% endif %}</i></a>
             {% if app.user.config.rssToken %}
                 {% include "@WallabagCore/themes/common/Entry/_rss_link.html.twig" %}
             {% endif %}
