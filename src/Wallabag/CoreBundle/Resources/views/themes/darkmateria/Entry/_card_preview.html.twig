@@ -10,7 +10,7 @@
                 <span class="preview" style="background-image: url({{ entry.previewPicture }})"></span>
             </a>
         </div>
-        {% include "@WallabagCore/themes/material/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
+        {% include "@WallabagCore/themes/darkmateria/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
     </div>
 
     <div class="card-reveal">
@@ -30,5 +30,5 @@
         </ul>
     </div>
 
-    {% include "@WallabagCore/themes/material/Entry/_card_actions.html.twig" with {'entry': entry} only %}
+    {% include "@WallabagCore/themes/darkmateria/Entry/_card_actions.html.twig" with {'entry': entry} only %}
 </div>
