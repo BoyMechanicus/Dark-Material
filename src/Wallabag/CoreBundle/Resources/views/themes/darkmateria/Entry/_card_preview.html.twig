@@ -1,4 +1,4 @@
-<div class="card black">
+<div class="card">
     <div class="card-body">
         <div class="card-image waves-effect waves-block waves-light">
             <ul class="card-entry-labels">
@@ -7,10 +7,11 @@
             {% endfor %}
             </ul>
             <a href="{{ path('view', { 'id': entry.id }) }}">
-                <span class="preview" style="background-image: url({{ entry.previewPicture }})"></span>
+                {% set previewClassModifier = entry.previewPicture ? '' : ' preview--default' %}
+                <span class="preview{{ previewClassModifier }}" style="background-image: url({{ entry.previewPicture | default(asset('wallassets/themes/_global/img/logo-square.svg')) }})"></span>
             </a>
         </div>
-        {% include "@WallabagCore/themes/darkmateria/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
+        {% include "@WallabagCore/themes/material/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
     </div>
 
     <div class="card-reveal">
@@ -30,5 +31,5 @@
         </ul>
     </div>
 
-    {% include "@WallabagCore/themes/darkmateria/Entry/_card_actions.html.twig" with {'entry': entry} only %}
+    {% include "@WallabagCore/themes/material/Entry/_card_actions.html.twig" with {'entry': entry} only %}
 </div>

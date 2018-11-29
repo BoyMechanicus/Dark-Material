@@ -10,6 +10,7 @@ module.exports = function () {
       material: path.join(rootDir, './app/Resources/static/themes/material/index.js'),
       baggy: path.join(rootDir, './app/Resources/static/themes/baggy/index.js'),
       public: path.join(rootDir, './app/Resources/static/themes/_global/share.js'),
+      darkmaterial: path.join(rootDir, './app/Resources/static/themes/darkmateria/index.js'),
     },
     output: {
       filename: '[name].js',

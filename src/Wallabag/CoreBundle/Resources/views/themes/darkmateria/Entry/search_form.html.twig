@@ -1,11 +1,11 @@
-<form class="input-field nav-panel-item nav-panel-search grey darken-1 white-text" style="display: none" name="search" method="GET" action="{{ path('search')}}">
+<form class="input-field nav-panel-item nav-panel-search" style="display: none" name="search" method="GET" action="{{ path('search')}}">
     {% if form_errors(form) %}
-        <span class="white-text">{{ form_errors(form) }}</span>
+        <span class="black-text">{{ form_errors(form) }}</span>
     {% endif %}
     <button type="submit" class="nav-form-button"><i class="material-icons search">search</i></button>
 
     {% if form_errors(form.term) %}
-        <span class="white-text">{{ form_errors(form.term) }}</span>
+        <span class="black-text">{{ form_errors(form.term) }}</span>
     {% endif %}
 
     <input type="hidden" name="currentRoute" value="{{ currentRoute }}" />
