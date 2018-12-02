@@ -232,36 +232,36 @@
                         {% include "@WallabagCore/themes/darkmateria/Entry/_reading_time.html.twig" with {'entry': entry} only %}
                     </li>
                     <li>
-                        <i class="material-icons" title="{{ 'entry.view.created_at'|trans }}">today</i>
+                        <i class="material-icons grey-text darken-1" title="{{ 'entry.view.created_at'|trans }}">today</i>
                         {{ entry.createdAt|date('Y-m-d H:i') }}
                     </li>
                     {% if entry.publishedAt is not null %}
                     <li>
-                        <i class="material-icons" title="{{ 'entry.view.published_at'|trans }}">create</i>
+                        <i class="material-icons grey-text darken-1" title="{{ 'entry.view.published_at'|trans }}">create</i>
                         {{ entry.publishedAt|date('Y-m-d H:i') }}
                     </li>
                     {% endif %}
                     {% if entry.publishedBy is not empty %}
                         <li>
-                            <i class="material-icons" title="{{ 'entry.view.published_by'|trans }}">person</i>
+                            <i class="material-icons grey-text darken-1" title="{{ 'entry.view.published_by'|trans }}">person</i>
                             {% for author in entry.publishedBy %}
                                 {{ author|raw }}{% if not loop.last %}, {% endif %}
                             {% endfor %}
                         </li>
                     {% endif %}
                     <li>
-                        <i class="material-icons link">link</i>
-                        <a href="{{ entry.url|e }}" target="_blank" rel="noopener" title="{{ 'entry.view.original_article'|trans }} : {{ entry.title|striptags }}" class="tool">
+                        <i class="material-icons link grey-text darken-1">link</i>
+                        <a href="{{ entry.url|e }}" target="_blank" rel="noopener" title="{{ 'entry.view.original_article'|trans }} : {{ entry.title|striptags }}" class="tool white-text">
                             {{ entry.domainName|removeWww }}
                         </a>
                     </li>
                     <li>
-                        <i class="material-icons link">comment</i>
+                        <i class="material-icons link grey-text darken-1">comment</i>
                         {{ 'entry.view.annotations_on_the_entry'|transchoice(entry.annotations | length) }}
                     </li>
                     {% if entry.originUrl is not empty %}
                         <li>
-                            <i class="material-icons" title="{{ 'entry.view.provided_by'|trans }}">launch</i>
+                            <i class="material-icons grey-text darken-1" title="{{ 'entry.view.provided_by'|trans }}">launch</i>
                             <a href="{{ entry.originUrl|e }}" target="_blank" rel="noopener" class="tool">
                                 {{ entry.originUrl|striptags|removeSchemeAndWww|truncate(32) }}
                             </a>
