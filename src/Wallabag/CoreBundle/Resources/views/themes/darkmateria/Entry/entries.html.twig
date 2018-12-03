@@ -26,7 +26,7 @@
             {{ 'entry.list.number_on_the_page'|transchoice(entries.count) }}
             <a href="{{ path('switch_view_mode') }}"><i class="material-icons grey-text">{% if listMode == 0 %}view_list{% else %}view_module{% endif %}</i></a>
             {% if app.user.config.rssToken %}
-                {% include "@WallabagCore/themes/common/Entry/_rss_link.html.twig" %}
+                {% include "@WallabagCore/themes/darkmateria/Entry/_rss_link.html.twig" %}
             {% endif %}
         </div>
         {% if entries.getNbPages > 1 %}
