@@ -5,7 +5,7 @@ import 'materialize-css/dist/css/materialize.css';
 import 'materialize-css/dist/js/materialize';
 
 /* Global imports */
-import '../_global/index';
+import '../_global/index'; /* Note: Dark? */
 
 /* Tools */
 import { initExport, initFilters } from './js/tools';
