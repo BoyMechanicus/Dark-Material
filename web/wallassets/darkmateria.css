@@ -2497,7 +2497,7 @@ video.responsive-video {
 }
 
 .pagination li a {
-    color: #777;
+    color: #444;
     display: inline-block;
     font-size: 1.2rem;
     padding: 0 10px;
@@ -2728,7 +2728,7 @@ table.bordered>thead>tr {
 }
 
 table.striped>tbody>tr:nth-child(odd) {
-    background-color: #333
+    background-color: #212121
 }
 
 table.striped>tbody>tr>td {
@@ -5245,7 +5245,7 @@ button.btn-floating {
 
 .btn-flat {
     box-shadow: none;
-    color: #343434;
+    color: #616161;
     cursor: pointer;
     transition: background-color .2s
 }
@@ -5286,7 +5286,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-    background-color: #222;
+    background-color: #424242;
     margin: 0;
     display: none;
     min-width: 100px;
@@ -5312,11 +5312,11 @@ button.btn-floating {
 .dropdown-content li.active,
 .dropdown-content li.selected,
 .dropdown-content li:hover {
-    background-color: #444
+    background-color: #424242
 }
 
 .dropdown-content li.active.selected {
-    background-color: #222
+    background-color: #e1e1e1
 }
 
 .dropdown-content li.divider {
@@ -5328,7 +5328,6 @@ button.btn-floating {
 .dropdown-content li>span {
     font-size: 16px;
     color: #26a69a;
-    background-color: #222;
     display: block;
     line-height: 22px;
     padding: 14px 16px
@@ -5576,7 +5575,7 @@ button.btn-floating {
     min-height: 3rem;
     line-height: 3rem;
     padding: 0 1rem;
-    background-color: #000;
+    background-color: #212121;
     border-bottom: 1px solid #ddd
 }
 
@@ -5868,8 +5867,8 @@ input[type=url]:disabled,
 input[type=url][readonly=readonly],
 textarea.materialize-textarea:disabled,
 textarea.materialize-textarea[readonly=readonly] {
-    color: rgba(3, 155, 229, .99);
-    border-bottom: 1px dotted rgba(170, 170, 170, .76)
+    color: rgba(0, 0, 0, .26);
+    border-bottom: 1px dotted rgba(0, 0, 0, .26)
 }
 
 input:not([type]):disabled+label,
@@ -6676,7 +6675,7 @@ select {
 }
 
 .select-wrapper span.caret {
-    color: #666;
+    color: 9e9e9e;
     position: absolute;
     right: 0;
     top: 0;
@@ -8078,7 +8077,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__box {
-    background: #fff;
+    background: #212121;
     display: table-cell;
     vertical-align: middle
 }
@@ -8161,13 +8160,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .picker__select--month.browser-default {
     display: inline;
-    background-color: #fff;
+    background-color: #757575;
     width: 40%
 }
 
 .picker__select--year.browser-default {
     display: inline;
-    background-color: #fff;
+    background-color: #757575;
     width: 26%
 }
 
@@ -8230,7 +8229,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 14.285714286%;
     font-size: .75em;
     padding-bottom: .25em;
-    color: #999;
+    color: #bdbdbd;
     font-weight: 500
 }
 
@@ -8255,7 +8254,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .picker__day--infocus:hover {
     cursor: pointer;
-    color: #000;
+    color: #fff;
     font-weight: 500
 }
 
@@ -8451,7 +8450,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__day--infocus {
-    color: #595959;
+    color: #757575;
     letter-spacing: -.3;
     padding: .75rem 0;
     font-weight: 400;
@@ -8672,13 +8671,13 @@ button.picker__today:focus {
 
 .annotator-hl {
     background: #ffff0a;
-    background: rgba(255, 255, 10, .4);
+    background: rgba(255, 255, 10, .3);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4DFFFF0A, endColorstr=#4DFFFF0A)"
 }
 
 .annotator-hl-temporary {
     background: #007cff;
-    background: rgba(0, 124, 255, .5);
+    background: rgba(0, 124, 255, .3);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4D007CFF, endColorstr=#4D007CFF)"
 }
 
@@ -9559,6 +9558,83 @@ button.picker__today:focus {
     color: hsla(0, 0%, 100%, .3)
 }
 
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    color: #383a42;
+    background: #fafafa
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #a0a1a7;
+    font-style: italic
+}
+
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+    color: #a626a4
+}
+
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #e45649
+}
+
+.hljs-literal {
+    color: #0184bb
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string {
+    color: #50a14f
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #c18401
+}
+
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+    color: #986801
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+    color: #4078f2
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: 700
+}
+
+.hljs-link {
+    text-decoration: underline
+}
+
 #article {
     font-size: 20px;
     margin: 0 auto;
@@ -9566,7 +9642,7 @@ button.picker__today:focus {
 }
 
 #article article {
-    color: #999;
+    color: #424242;
     font-size: 18px;
     line-height: 1.7em;
     overflow-wrap: break-word
@@ -9578,7 +9654,7 @@ button.picker__today:focus {
 #article article h4,
 #article article h5,
 #article article h6 {
-    color: #555
+    color: #f5f5f5 /* #f5f5f5 */
 }
 
 #article article h1 strong,
@@ -9656,7 +9732,7 @@ button.picker__today:focus {
     font-size: .8em;
     white-space: pre;
     overflow: auto;
-    background: #333;
+    background: #f5f5f5;
     border-radius: 3px
 }
 
@@ -9868,9 +9944,15 @@ main ul.row {
 
 .card .card-fullimage .preview,
 .card .card-image .preview {
-    height: 14em;
+    height: 100%;
     background: no-repeat 50%/cover;
+    background-color: #efefef;
     display: block
+}
+
+.card .card-fullimage .preview--default,
+.card .card-image .preview--default {
+    background-size: contain
 }
 
 .card.sw {
@@ -10131,6 +10213,10 @@ body.login main {
 .valign-wrapper,
 main {
     height: 100%
+}
+
+.typo-logo {
+    max-width: 150px
 }
 
 #main {
@@ -10456,19 +10542,19 @@ a.icon-image:before {
 }
 
 a.icon-image.carrot:before {
-    background: url(themes/_darkmateria/img/icons/carrot-icon--white.png) no-repeat 50%/90%
+    background: url(themes/_global/img/icons/carrot-icon--black.png) no-repeat 50%/90%
 }
 
 a.icon-image.diaspora:before {
-    background: url(themes/_darkmateria/img/icons/diaspora-icon--black.png) no-repeat 50%/80%
+    background: url(themes/_global/img/icons/diaspora-icon--black.png) no-repeat 50%/80%
 }
 
 a.icon-image.unmark:before {
-    background: url(themes/_darkmateria/img/icons/unmark-icon--black.png) no-repeat 50%/80%
+    background: url(themes/_global/img/icons/unmark-icon--black.png) no-repeat 50%/80%
 }
 
 a.icon-image.shaarli:before {
-    background: url(themes/_darkmateria/img/icons/shaarli.png) no-repeat 50%/80%
+    background: url(themes/_global/img/icons/shaarli.png) no-repeat 50%/80%
 }
 
 a.icon-image.scuttle:before {

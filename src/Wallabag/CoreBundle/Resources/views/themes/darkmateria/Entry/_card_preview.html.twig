@@ -7,7 +7,8 @@
             {% endfor %}
             </ul>
             <a href="{{ path('view', { 'id': entry.id }) }}">
-                <span class="preview" style="background-image: url({{ entry.previewPicture }})"></span>
+                {% set previewClassModifier = entry.previewPicture ? '' : ' preview--default' %}
+                <span class="preview{{ previewClassModifier }} black" style="background-image: url({{ entry.previewPicture | default(asset('wallassets/themes/_darkmateria/img/logo-square.svg')) }})"></span>
             </a>
         </div>
         {% include "@WallabagCore/themes/darkmateria/Entry/Card/_content.html.twig" with {'entry': entry, 'withPreview': true} only %}
@@ -30,5 +31,5 @@
         </ul>
     </div>
 
-    {% include "@WallabagCore/themes/darkmateria/Entry/_card_actions.html.twig" with {'entry': entry} only %}
+    {% include "@WallabagCore/themes/material/Entry/_card_actions.html.twig" with {'entry': entry} only %}
 </div>

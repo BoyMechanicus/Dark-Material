@@ -6,16 +6,16 @@
 
     <div class="row">
         <div class="col s12">
-            <div class="card-panel grey darken-3 grey-text lighten-3">
+            <div class="card-panel black grey-text">
 
                 <form name="entry" method="post" action="">
                     <div class="card-content">
                         {% if form_errors(form) %}
-                            <span class="white-text">{{ form_errors(form) }}</span>
+                            <span class="grey-text text-lighten-1">{{ form_errors(form) }}</span>
                         {% endif %}
 
                         {% if form_errors(form.title) %}
-                            <span class="white-text">{{ form_errors(form.title) }}</span>
+                            <span class="grey-text text-lighten-1">{{ form_errors(form.title) }}</span>
                         {% endif %}
 
                         <div class="input-field s12">
@@ -23,7 +23,7 @@
                             {{ form_widget(form.title) }}
                         </div>
 
-                        <div class="input-field s12">
+                        <div class="input-field s12"> {# add attribute to color url #}
                             {{ form_label(form.url) }}
                             {{ form_widget(form.url) }}
                         </div>

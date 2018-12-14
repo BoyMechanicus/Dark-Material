@@ -38,6 +38,8 @@
 
             <link rel="shortcut icon" type="image/x-icon" href="{{ asset('wallassets/themes/_darkmateria/img/appicon/favicon.ico') }}">
 
+            <link rel="manifest" href="{{ asset('manifest.json') }}">
+
             {% block css %}
             {% endblock %}
             {% block scripts %}
@@ -49,10 +51,10 @@
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %} grey-text lighten-3">
+    <body class="{% block body_class %}{% endblock %}">
         {% block header %}{% endblock %}
 
-        <div id="main" class="black grey-text lighten-4">
+        <div id="main" class="main grey darken-4 grey-text">
             {% block menu %}{% endblock %}
 
             <main>
@@ -60,7 +62,7 @@
 
                 {% block messages %}{% endblock %}
 
-                <div id="content" class="black grey-text lighten-4">
+                <div id="content" class="grey-text text-lighten-2 grey darken-4" >
                     {% block content %}{% endblock %}
                 </div>
             </main>
