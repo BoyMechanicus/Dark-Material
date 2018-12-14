@@ -34,9 +34,9 @@
         {% endif %}
     </div>
 
-    <ul class="{% if listMode == 1 %}collection{% else %}row data{% endif %}">
+    <ul class="{% if listMode == 1 %}collection{% else %}row data{% endif %} black">
         {% for entry in entries %}
-            <li id="entry-{{ entry.id|e }}" class="col {% if listMode == 0 %}l3 m6{% else %}collection-item{% endif %} s12">
+            <li id="entry-{{ entry.id|e }}" class="col {% if listMode == 0 %}l3 m6{% else %}collection-item{% endif %} s12 black">
                 {% if listMode == 1 %}
                     {% include "@WallabagCore/themes/darkmateria/Entry/_card_list.html.twig" with {'entry': entry} only %}
                 {% elseif not entry.previewPicture is null and entry.mimetype starts with 'image/' %}

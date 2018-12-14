@@ -7,7 +7,7 @@
     </a>
 
     <div class="{{ subClass|default('original grey-text') }}">
-        <a href="{{ entry.url|e }}" target="_blank" title="{{ entry.domainName|removeWww }}" class="tool grey-text">{{ entry.domainName|removeWww }}</a>
+        <a href="{{ entry.url|e }}" target="_blank" title="{{ entry.domainName|removeWww }}" class="tool grey-text text-lighten-2">{{ entry.domainName|removeWww }}</a>
         {% if withTags is defined %}
             {% include "@WallabagCore/themes/darkmateria/Entry/_tags.html.twig" with {'tags': entry.tags | slice(0, 3), 'entryId': entry.id, 'listClass': ' hide-on-med-and-down'} only %}
         {% endif %}
