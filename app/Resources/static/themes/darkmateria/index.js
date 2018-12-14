@@ -4,8 +4,8 @@ import $ from 'jquery';
 import 'materialize-css/dist/css/materialize.css';
 import 'materialize-css/dist/js/materialize';
 
-/* Global imports */
-import '../_global/index'; /* Note: Dark? */
+/* Global imports */  /* Note: Dark yes for highlightjs */
+import '../_darkglobal/index';
 
 /* Tools */
 import { initExport, initFilters } from './js/tools';
