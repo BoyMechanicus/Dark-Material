@@ -9654,7 +9654,7 @@ button.picker__today:focus {
 #article article h4,
 #article article h5,
 #article article h6 {
-    color: #212121
+    color: #212121 /* #f5f5f5 */
 }
 
 #article article h1 strong,
